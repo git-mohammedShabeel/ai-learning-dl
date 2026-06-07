@@ -10,3 +10,8 @@ experiments/checkpoints/
 experiments/logs/
 .ipynb_checkpoints/
 wandb/
+
+# Large dataset files
+shared/raw_data/
+*.json
+*.csv
