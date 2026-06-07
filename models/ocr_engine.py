@@ -133,7 +133,7 @@ if __name__ == "__main__":
                              "chars": len(r["text"])})
 
     # Save test log
-    log_path = os.path.join(base, "ocr_test_results.json")
+    log_path = os.path.join(os.path.expanduser("~"), "Desktop", "DL", "ai-learning-dl", "data", "ocr_test_results.json")
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(results_log, f, indent=2)
     print(f"\nTest log saved -> {log_path}")
